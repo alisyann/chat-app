@@ -3,12 +3,11 @@ import './Contact.css'
 function Contact(){
     return(
         <div className="Contact">
-            <img class="avatar" src="https://randomuser.me/api/portraits/men/3.jpg"/>
-            <div class="status">
-                <ul>
-                    <li class="name">{"nom"}</li>
-                    <li class="status-online">{"statut"}</li>
-                </ul>
+            <img className="avatar" src="https://randomuser.me/api/portraits/men/3.jpg"/>
+            <div className="status">
+                <h4 className="name">{"nom"}</h4>
+                <span className="status-online"></span>
+                <h5 className="status-text">{"Online"}</h5>
             </div>
         </div>
     )
