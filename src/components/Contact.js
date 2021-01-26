@@ -1,13 +1,13 @@
 import './Contact.css'
 
-function Contact(){
+function Contact(props){
     return(
         <div className="Contact">
-            <img className="avatar" src="https://randomuser.me/api/portraits/men/3.jpg"/>
+            <img className="avatar" src={props.avatar}/>
             <div className="status">
-                <h4 className="name">{"nom"}</h4>
+                <h4 className="name">{props.name}</h4>
                 <span className="status-online"></span>
-                <h5 className="status-text">{"Online"}</h5>
+                <h5 className="status-text">{props.online}</h5>
             </div>
         </div>
     )
