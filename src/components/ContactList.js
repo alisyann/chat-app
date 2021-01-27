@@ -30,12 +30,10 @@ const users = [
 
   const ContactList = () =>{
       return(
-          <div class="Contact">{
-            users.map(user => <Contact {...user}/>)
+          <div>{
+            users.map(user =>console.log(user)|| <Contact {...user}/>)
               }
           </div>
-          
-
       )
   }
 
